@@ -1,0 +1,3 @@
+[submodule "ruby-libsfp"]
+	path = ruby-libsfp
+	url = https://github.com/kazubu/ruby-libsfp.git

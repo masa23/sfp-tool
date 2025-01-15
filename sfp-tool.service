@@ -1,0 +1,13 @@
+[Unit]
+Description=SFP Tool GPIO Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/sfp-tool/sfp-tool.py
+WorkingDirectory=/opt/sfp-tool
+Restart=always
+User=root
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
